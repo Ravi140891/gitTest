@@ -32,25 +32,25 @@
 
 // Infinity represents the mathematical Infinity. It is a special value that’s greater than any number.
 
-console.log(1 / 0); // Infinity
+// console.log(1 / 0); // Infinity
 
 // or we can just reference it directly:
-console.log(Infinity); // Infinity
+// console.log(Infinity); // Infinity
 
 // NaN represents a computational error. It is a result of an incorrect or an undefined mathematical operation, for instance
- console.log("not a number" / 2); // NaN
+//  console.log("not a number" / 2); // NaN
 
 //  Any further mathematical operation on NaN returns NaN:
- console.log(NaN + 1); // NaN
- console.log(NaN * 2); // NaN
+//  console.log(NaN + 1); // NaN
+//  console.log(NaN * 2); // NaN
 
  // So, if there’s a NaN somewhere in a mathematical expression, it propagates to the whole result (there’s only one exception to that: NaN ** 0 is 1).
 
  // 2. Strings: A string in JavaScript must be surrounded by quotes.
 
- let str = "Hello";
- let str2 = 'can also use single quotes';
- let str3 = `can use backticks to embedd a variable in a string like ${str}`;
+//  let str = "Hello";
+//  let str2 = 'can also use single quotes';
+//  let str3 = `can use backticks to embedd a variable in a string like ${str}`;
 
  // In JavaScript, there are 3 types of quotes.
  // 1. Double quotes ("Hello")
@@ -60,11 +60,11 @@ console.log(Infinity); // Infinity
  // Double and single quotes are simple quotes. There’s practically no difference between them in JavaScript.
  // Backticks are extended functionality quotes. They allow us to embed variables and expressions into a string by wrapping them in ${…}, for example:
 
- let name = "Ravi";
+//  let name = "Ravi";
  // here will embedd a variable
- console.log(`Hello, ${name}!`) // output: Hello, Ravi!
+//  console.log(`Hello, ${name}!`) // output: Hello, Ravi!
  // here will embedd an expression
- console.log(`the result is ${1 + 2}`) // output -> the result is 3
+//  console.log(`the result is ${1 + 2}`) // output -> the result is 3
 
 //   The expression inside ${…} is evaluated and the result becomes a part of the string. We can put anything in there: a variable like name or an arithmetical expression like 1 + 2
 //   or something more complex.
@@ -73,14 +73,14 @@ console.log(Infinity); // Infinity
 // 3. Boolean: The boolean type has only two values: true and false.
 // This type is commonly used to store yes/no values: true means yes, correct, and false means no, incorrect.
  
-let isGreater = 4 > 1;
-console.log(isGreater) // output -> true
+// let isGreater = 4 > 1;
+// console.log(isGreater) // output -> true
 
 // 4. Null: The special null value does not belong to any of the types described above.
 
 // It forms a separate type of its own which contains only the null value:
 
-let age = null; 
+// let age = null; 
 
 // It's just a special value which represents nothing, empty or value unknown.
 
@@ -91,5 +91,77 @@ let age = null;
 // The meaning of undefined is value is not assigned.
 // If a variable is declared, but not assigned, then its value is undefined
 
-let age;
-console.log(age)// output -> undefined
+// let age;
+// console.log(age)// output -> undefined
+
+
+// 6. BigInt: In JavaScript, the “number” type cannot safely represent integer values larger than (253-1) (that’s 9007199254740991), or less than -(253-1) for negatives.
+// To be really precise, the “number” type can store larger integers (up to 1.7976931348623157 * 10308), but outside of the safe integer range ±(253-1) there’ll be a precision error, 
+// because not all digits fit into the fixed 64-bit storage. So an “approximate” value may be stored.
+
+// A BigInt value is created by appending n to the end of an integer:
+
+// Example: 
+// const bigInt = 1234567890123456789012345678901234567890n;
+
+
+// 7. Objects: The object type is special.
+// All other types are called “primitive” because their values can contain only a single thing (be it a string or a number or whatever). In contrast, objects are used to store collections of data and more complex entities.
+
+// Will explain more later in details.
+
+
+// 8. Symbols: A “symbol” represents a unique identifier.
+
+// A value of this type can be created using Symbol():
+
+// Example : 
+// let id = Symbol("id");
+
+
+
+// typeof Operator: To find or know the data type of any variable we can use typeof operator.
+
+// typeof undefined // "undefined"
+
+// typeof 0 // "number"
+
+// typeof 10n // "bigint"
+
+// typeof true // "boolean"
+
+// typeof "foo" // "string"
+
+// typeof Symbol("id") // "symbol"
+
+// typeof Math // "object"  
+
+// typeof null // "object"  
+
+// typeof alert // "function" 
+
+
+
+// Interaction functions in JS
+
+// alert : We use this function to pop a message on browser and it shows till user press ok.
+
+// Example:
+// alert("Hello");
+
+
+// prompt: we use this to take input from user. It opens a window on web page and ask user to input something in it. We get the result once user enter something and press Ok.
+// If user will cancel or press esc key. We will get Null in result.
+
+// Example: 
+
+// prompt("Enter your name?"); 
+
+
+// confirm: This function ask a question to user in browser. It returns True if user press Ok or False if user press cancel.
+
+// Example : 
+
+// let isBoss = confirm("Are you the boss?");
+
+// alert( isBoss ); // true if OK is pressed
