@@ -141,7 +141,6 @@
 // typeof alert // "function" 
 
 
-
 // Interaction functions in JS
 
 // alert : We use this function to pop a message on browser and it shows till user press ok.
@@ -165,3 +164,27 @@
 // let isBoss = confirm("Are you the boss?");
 
 // alert( isBoss ); // true if OK is pressed
+
+
+
+// String Conversion: 
+// We can convert any Data Type to String by following methods:
+
+// let num = 12345; // type of num is Number.
+// num = String(12345) //
+// or
+// let str = String(num);
+// let str = num.toString;
+// num = 12345 + "";
+
+
+// Number Conversion: It can be performed on mathematical functions and expressions only.
+
+// let str = "123"; // typeof str is String here;
+// let num = Number(str); 
+// let num = +(str);
+// let num = str.toNumber;
+// let num = +(undefined) ==> NaN;
+// let num = +(null) ==> 0;
+// let num = +(true) ==> 1;
+// let num = +(false) ==> 0;
