@@ -188,3 +188,94 @@
 // let num = +(null) ==> 0;
 // let num = +(true) ==> 1;
 // let num = +(false) ==> 0;
+
+
+// Operators in JavaScript
+
+// Math operators: 
+// 1. Addition : We use this operator to perform addition operation between operands.
+
+// let sum = 2 + 3; // ==> 5
+
+// 2. Subtraction: We use this operator to perform subtraction between operands.
+
+// let diff = 5 - 3; // ==> 2
+
+// 3. Multiplication: We use this operator to perform multiplication between operands.
+
+// let product = 2 * 3; // ==> 6
+
+// 4. Division: We use this operator to perform division between operands.
+
+// let result = 4 / 2; // ==> 2
+
+// 5. Remainder: We use this operator to find the remainder between 2 operands.
+
+// let rem = 3 % 2; // ==> 1
+
+// 6. Exponentiation: This operator a ** b raises a to the power of b.
+
+// let result = 2 ** 3; // ==> 8
+// let result = 3 ** 2; // ==> 9
+
+
+// String Concatenation using binary (+) operator:
+
+// If we perform addition between 2 strings as operands then it will show concat result means will join those strings. Or even if one variable is integer and other one is string then it will concat.
+
+// let a = "Hello" // this is a string.
+// let b = "World";
+// let output = a + b; // Output ==> HelloWorld
+
+// let Str = "Hello";
+// let num = 2;
+// let result = Str + num; // Output ==> Hello2
+
+
+// We can perform Numeric conversion using Unary (+). i.e if we add (+) before any string type number then it will convert it into Integer.
+
+// let str = "123" // As anything written inside quotes are string data type.
+// let num = +(str) or
+// let str = +("123") // Output would be 123 which is Number data type.
+
+// if we will add (+) with "" empty string it will show 0.
+// console.log(+"") // output ==> 0
+
+// with boolean it will be like:
+// console.log(+true); // output ==> 1
+// console.log(+false); // output ==> 0
+
+// Operator Precedence: 
+// if an expression have more than one operator, then execution is defined by their precedence.
+
+// anything written inside () would be of highest precedence. 
+// multiplication and division have same precedence. Expression would be solved from left to right.
+// addition and subtraction have same precedence.
+
+
+// Assignment Operator: (=)
+// This operator returns a value to the variable. 
+
+// let x = value; // here value is assigned to variable x.
+
+// let a = 1;
+// let b = 2;
+// let c = 3 - (a = b + 1);
+// console.log(a,c); Output ==> 3,0
+// here first b + 1 is solved which would be 3. then value of a would be updated as 3. so a become 3 now. then 3 - 3 will return a value of 0 which would be assigned to c.
+
+
+// Increment Operator: 
+// Suppose we have a variable counter and we have to keep increasing it value by 1 on each iteration of a loop. 
+// let counter = 2;
+// so instead of doing 
+// counter = counter + 1;
+// we can also write 
+// counter++; // this increases the value of counter by 1 every time.
+
+
+// Decrement Operator:
+// Its same like increment operator. Instead of increasing it decrease the value of counter by 1.
+
+// counter--;
+
